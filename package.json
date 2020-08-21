@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "deploy": "gh-pages "
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "homepage": "https://gupshubh123.github.io/mmc",
