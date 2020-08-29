@@ -1,13 +1,3 @@
-/*
-  Theme Name: BizPage
-  Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 
 body {
   background: #fff;
@@ -166,6 +156,10 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+  width: 225px;
+  position: fixed;
+  top: -5px;
+  left: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -705,14 +699,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#about .about-col:hover .icon {
+/*#about .about-col:hover .icon {
   background-color: #fff;
 }
 
 #about .about-col:hover i {
   color: #18d26e;
 }
-
+*/
 #about .about-col h2 {
   color: #000;
   text-align: center;
@@ -1667,6 +1661,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 #ContactUs .c-detail .c-info h4{
   margin-bottom: 5px;
+}
+.iconify{
+  width: 36px;
+  height: 48px;
+}
+.aboutUsIconSet{
+  position: relative;
+  color: white;
+  top: -3px;
+  left: 0px;
 }
 /*--------------------------------------------------------------
 # Responsive Media Queries
