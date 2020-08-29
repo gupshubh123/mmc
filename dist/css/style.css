@@ -1776,6 +1776,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin: 10px 5px;
     text-align: left;
   }
+  #ContactUs .c-detail .c-info{
+    margin-left: 10px;
+    width: 63%;
+  }
 }
 
 #skills, #services, #facts, #portfolio, #clients,  .footer-top{
