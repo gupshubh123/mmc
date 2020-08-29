@@ -782,31 +782,32 @@
       <div class="contact-outer-wrapper">
         <div class="form-wrap">
           <p>Thank you for stopping by. How can we help?</p>
-          <form action="#" method="post">
+          <form action="#" method="post" id="contactForm">
             <div class="fname floating-label">
-              <input type="text" required class="floating-input" name="full name" />
+              <input id="fullName" type="text" required class="floating-input" name="fullname" />
               <label for="title">Full Name</label>
             </div>
             <div class="email floating-label">
-              <input type="email" required class="floating-input" name="email" />
+              <input id="userEmail" type="email" required class="floating-input" name="email" />
               <label for="email">Email</label>
             </div>
             <div class="contact floating-label">
-              <input type="tel" class="floating-input" name="contact" />
-              <label for="email" required>Contact</label>
+              <input id="userContact" type="tel" required class="floating-input" name="userContact" />
+              <label for="userContact" required>Contact</label>
             </div>
             <div class="company floating-label">
-              <input type="text" class="floating-input" name="company" />
-              <label for="email">Company</label>
+              <input id="userCompany" type="text" requried class="floating-input" name="userCompany" />
+              <label for="userCompany">Company</label>
             </div>
             <div class="user-msg floating-label">
-              <textarea type="text" class="floating-input" name="Message"></textarea>
+              <textarea id="message" type="text" required class="floating-input" name="message"></textarea>
               <label for="message" class="msg-label">Your Message</label>
             </div>
             <div class="submit-btn">
-              <button type="submit">Submit</button>
+              <button type="submit" id="contactFormSubmit">Submit</button>
             </div>
           </form>
+          <div id="mail-status"></div>
         </div>
         <div class="address-block">
           <p class="add-title">Contact Details</p>
