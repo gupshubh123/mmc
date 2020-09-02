@@ -197,11 +197,66 @@
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
+    autoplay: false,
+    dots: false,
     loop: true,
-    items: 1
+    items: 1,
+    nav : true,
+    navText: ['<div class="carousel-nav"><i class="fa fa-chevron-left carousel-nav-icon"></i></div>', 
+    '<div class="carousel-nav"><i class="fa fa-chevron-right carousel-nav-icon"></i></div>'],
+    stopOnHover : true,
   });
-
+  function validateContact(){
+    let valid = true;	
+    // $(".demoInputBox").css('background-color','');
+    // $(".info").html('');
+    // if(!$("#userName").val()) {
+    //     $("#userName-info").html("(required)");
+    //     $("#userName").css('background-color','#FFFFDF');
+    //     valid = false;
+    // }
+    // if(!$("#userEmail").val()) {
+    //     $("#userEmail-info").html("(required)");
+    //     $("#userEmail").css('background-color','#FFFFDF');
+    //     valid = false;
+    // }
+    // if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+    //     $("#userEmail-info").html("(invalid)");
+    //     $("#userEmail").css('background-color','#FFFFDF');
+    //     valid = false;
+    // }
+    // if(!$("#subject").val()) {
+    //     $("#subject-info").html("(required)");
+    //     $("#subject").css('background-color','#FFFFDF');
+    //     valid = false;
+    // }
+    // if(!$("#content").val()) {
+    //     $("#content-info").html("(required)");
+    //     $("#content").css('background-color','#FFFFDF');
+    //     valid = false;
+    // }
+    return valid;
+  }
+    // let data ='fullName='+$("#fullName").val()+'&userEmail='+
+    // $("#userEmail").val()+'&userContact='+
+    // $("#userContact").val()+'&company='+
+    // $("#company").val()+'&message='+$("#message").val()
+    var $contactForm = $('#contactForm');
+    $contactForm.on('submit', function(e){
+    e.preventDefault()
+    e.stopPropagation()
+    let valid = validateContact();
+    if(valid) {
+      jQuery.ajax({
+          url: "contact.php",
+          data:$contactForm.serialize(),
+          type: "POST",
+          success:function(data){
+              $("#mail-status").html(data);
+          },
+          error:function (){}
+      });
+  }
+  })
 })(jQuery);
 
