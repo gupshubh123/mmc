@@ -1118,7 +1118,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: left;
   font-size: 20px;
   font-weight: bold;
-  margin: 0px 0 4% 7%;
+  margin: 0px 0 4% 45px;
   color: #111;
 }
 
@@ -1184,6 +1184,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .productDesc{
   width: 50%;
+  position: relative;
 }
 .service-offered-heading{
   margin-left: 4%;
@@ -1678,9 +1679,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 0px;
 }
 .productDesc .owl-nav{
-  display: flex;
-  margin: 0 15px;
-  justify-content: space-between;
+  width: 100%;
+    display: flex;
+    padding: 0 45px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15px;
 }
 
 .carousel-nav{
@@ -1800,7 +1804,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 100%;
   }
   .product .testimonial-item h3{
-    margin: 10px 0 4% 0%;
+    margin: 10px 0 4% 5px;
   }
   .product-main-content{
     margin: 10px 5px;
@@ -1811,7 +1815,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 63%;
   }
   .productDesc .owl-nav{
-    padding:10px 0px
+    padding:10px 0px;
+    position: static;
   }
   .product-main-content{
     height: 100%;
