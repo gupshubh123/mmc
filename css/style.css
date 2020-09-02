@@ -1176,6 +1176,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .productImg{
   width: 50%;
+  display: flex;
+  align-items: flex-end;
 }
 .productImg img{
   width: 100%;
