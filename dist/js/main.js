@@ -197,10 +197,14 @@
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
+    autoplay: false,
+    dots: false,
     loop: true,
-    items: 1
+    items: 1,
+    nav : true,
+    navText: ['<div class="carousel-nav"><i class="fa fa-chevron-left carousel-nav-icon"></i></div>', 
+    '<div class="carousel-nav"><i class="fa fa-chevron-right carousel-nav-icon"></i></div>'],
+    stopOnHover : true,
   });
   function validateContact(){
     let valid = true;	
