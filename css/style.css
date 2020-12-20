@@ -1829,3 +1829,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #skills, #services, #facts, #portfolio, #clients,  .footer-top{
 display: none;
 }
+#product2{
+  display: none;
+}
