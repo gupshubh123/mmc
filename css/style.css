@@ -1288,9 +1288,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 26%;
 }
 #team .founderImage{
-  border-radius: 13px;
-  width: 100%;
-  max-width: 300px;
+    border: 0.5px solid #efefef;
+    border-radius: 13px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 4px 4px 10px #efefef;
 }
 #team .founderDetails{
   width: 74%;
