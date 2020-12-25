@@ -1208,7 +1208,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #team .member {
   text-align: center;
   margin-bottom: 20px;
-  background: #000;
   position: relative;
 }
 
@@ -1281,7 +1280,34 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
   margin: 0 2px;
 }
-
+#team .founder{
+  display: flex;
+  margin: 20px 60px;
+}
+#team .founderImageContainer{
+  width: 26%;
+}
+#team .founderImage{
+  border-radius: 13px;
+  width: 100%;
+  max-width: 300px;
+}
+#team .founderDetails{
+  width: 74%;
+    font-size: 15px;
+}
+#team .heading{
+  font-size: 20px;
+  font-weight: 800;
+}
+#team .text{
+  font-size: 15px;
+    margin-top: 15px;
+}
+#team .pos{
+  font-weight: 600;
+  font-size: 13px;
+}
 /* Contact Section
 --------------------------------*/
 
@@ -1749,6 +1775,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
+@media (max-width: 1025px) {
+  #team .text{
+    margin-right: 30px;
+  }
+  #team .founderImage{
+    width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
@@ -1824,7 +1859,29 @@ body.mobile-nav-active #mobile-nav-toggle {
   #header #logo img{
     left: 0;
   }
+  #team .founder{
+    display: block;
+    margin: 20px 25px;
+  }
+  #team .founderImageContainer{
+    width: 100%;
+    text-align:center;
+  }
+  #team .founderImage{
+    width: 100%;
+  }
+  #team .founderDetails{
+    width: 100%;
+  }
+  #team .heading{
+    text-align: center;
+  }
+  #team .text{
+    margin-right: 0px;
+  }
+
 }
+
 
 #skills, #services, #facts, #portfolio, #clients,  .footer-top{
 display: none;
