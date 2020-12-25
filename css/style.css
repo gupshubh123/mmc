@@ -1288,9 +1288,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 26%;
 }
 #team .founderImage{
-  border-radius: 13px;
-  width: 100%;
-  max-width: 300px;
+    border: 0.5px solid #efefef;
+    border-radius: 13px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 4px 4px 10px #efefef;
 }
 #team .founderDetails{
   width: 74%;
@@ -1881,8 +1883,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
 }
-
-
+#mail-status p.successEmail{
+  color: green;
+    margin-top: 10px;
+    text-align: center;
+}
+#mail-status p.sendingEmail{
+  color: black;
+    margin-top: 10px;
+    text-align: center;
+}
+#mail-status p.errorEmail{
+  color: red;
+    margin-top: 10px;
+    text-align: center;
+}
 #skills, #services, #facts, #portfolio, #clients,  .footer-top{
 display: none;
 }

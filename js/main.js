@@ -245,6 +245,7 @@
     $contactForm.on('submit', function(e){
     e.preventDefault()
     e.stopPropagation()
+    $("#mail-status").html('<p class="sendingEmail">Sending email..</p>');
     let valid = validateContact();
     if(valid) {
       jQuery.ajax({
@@ -252,7 +253,7 @@
           data:$contactForm.serialize(),
           type: "POST",
           success:function(data){
-              $("#mail-status").html(data);
+              $("#mail-status").empty().html(data);
           },
           error:function (){}
       });
